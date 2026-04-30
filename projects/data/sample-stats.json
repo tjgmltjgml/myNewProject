@@ -1,0 +1,9 @@
+[
+  { "label": "Mon", "value": 12 },
+  { "label": "Tue", "value": 19 },
+  { "label": "Wed", "value": 8 },
+  { "label": "Thu", "value": 22 },
+  { "label": "Fri", "value": 15 },
+  { "label": "Sat", "value": 28 },
+  { "label": "Sun", "value": 10 }
+]

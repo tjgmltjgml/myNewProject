@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3D Form Study — Portfolio</title>
+    <meta name="description" content="WEBGL primitives with orbit control in p5.js." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="project-page">
+    <a class="skip-link" href="#sketch-holder">Skip to sketch</a>
+    <header class="site-header project-header">
+      <div class="wrap">
+        <a class="logo" href="../index.html#work">Portfolio</a>
+        <a class="back-link" href="../index.html#work">← All projects</a>
+      </div>
+    </header>
+
+    <main class="project-main wrap">
+      <div class="project-title-block">
+        <p class="section-label">Project 09</p>
+        <h1 id="project-title">3D Form Study</h1>
+        <div class="project-meta-row">
+          <span>April 2026</span>
+          <span>~12 hours</span>
+          <div class="project-tags">
+            <span class="tag-pill">3D</span>
+            <span class="tag-pill">Generative</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sketch-stage" role="region" aria-labelledby="project-title">
+        <div class="sketch-toolbar">
+          <button type="button" class="btn btn-secondary" id="restart">Restart sketch</button>
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/yourusername/p5-portfolio/blob/main/projects/js/3d-form-study.js"
+            rel="noopener noreferrer"
+            >View source</a
+          >
+        </div>
+        <div
+          id="sketch-holder"
+          class="sketch-holder"
+          role="img"
+          aria-label="Live p5.js WEBGL sketch: torus and box with lighting"
+        ></div>
+      </div>
+
+      <div class="detail-prose">
+        <p>
+          A torus and box share a lit scene in <code>WEBGL</code>. When available,
+          <code>orbitControl()</code> lets you drag to tumble the forms; otherwise the sketch falls
+          back to a slow autorotation. Directional and ambient lights separate surface normals without
+          introducing a custom shader—leaving room to grow into materials and GLSL later.
+        </p>
+      </div>
+      <ul class="api-list">
+        <li><code>createCanvas(w, h, WEBGL)</code></li>
+        <li><code>torus()</code>, <code>box()</code>, lights</li>
+        <li><code>orbitControl()</code> when supported</li>
+      </ul>
+
+      <nav class="project-pager" aria-label="Adjacent projects">
+        <a href="interactive-data-viz.html">← Previous</a>
+        <a href="generative-portrait.html">Next →</a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p class="footer-copy"><a href="../index.html">Home</a></p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+    <script src="js/3d-form-study.js"></script>
+  </body>
+</html>

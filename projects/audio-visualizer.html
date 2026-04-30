@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Audio Visualizer — Portfolio</title>
+    <meta name="description" content="Microphone-driven spectrum bars with p5.FFT." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="project-page">
+    <a class="skip-link" href="#sketch-holder">Skip to sketch</a>
+    <header class="site-header project-header">
+      <div class="wrap">
+        <a class="logo" href="../index.html#work">Portfolio</a>
+        <a class="back-link" href="../index.html#work">← All projects</a>
+      </div>
+    </header>
+
+    <main class="project-main wrap">
+      <div class="project-title-block">
+        <p class="section-label">Project 04</p>
+        <h1 id="project-title">Audio Visualizer</h1>
+        <div class="project-meta-row">
+          <span>April 2026</span>
+          <span>~10 hours</span>
+          <div class="project-tags">
+            <span class="tag-pill">Audio</span>
+            <span class="tag-pill">Interactivity</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sketch-stage" role="region" aria-labelledby="project-title">
+        <div class="sketch-toolbar">
+          <button type="button" class="btn btn-secondary" id="restart">Restart sketch</button>
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/yourusername/p5-portfolio/blob/main/projects/js/audio-visualizer.js"
+            rel="noopener noreferrer"
+            >View source</a
+          >
+        </div>
+        <div id="sketch-holder" class="sketch-holder">
+          <div class="sketch-overlay" id="media-overlay">
+            <div>
+              <p>
+                This sketch uses your microphone. Click start to enable audio input (browser
+                permission required).
+              </p>
+              <button type="button" class="btn btn-primary" id="start-media">Start microphone</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-prose">
+        <p>
+          The sketch analyzes incoming audio with <code>p5.FFT</code> and maps spectral bins to bar
+          heights. Hue shifts across frequency for a quick read of the spectrum. A deliberate click
+          starts the mic so browsers treat it as a user gesture before initializing
+          <code>p5.AudioIn</code>.
+        </p>
+      </div>
+      <ul class="api-list">
+        <li><code>p5.AudioIn</code>, <code>p5.FFT</code>, <code>analyze()</code></li>
+        <li><code>map()</code> for bar height and color</li>
+      </ul>
+
+      <nav class="project-pager" aria-label="Adjacent projects">
+        <a href="recursive-patterns.html">← Previous</a>
+        <a href="cellular-automaton.html">Next →</a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p class="footer-copy"><a href="../index.html">Home</a></p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/addons/p5.sound.min.js"></script>
+    <script src="js/audio-visualizer.js"></script>
+  </body>
+</html>

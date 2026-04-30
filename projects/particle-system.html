@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Particle System — Portfolio</title>
+    <meta name="description" content="Physics-inspired particle emitter with p5.js vectors." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="project-page">
+    <a class="skip-link" href="#sketch-holder">Skip to sketch</a>
+    <header class="site-header project-header">
+      <div class="wrap">
+        <a class="logo" href="../index.html#work">Portfolio</a>
+        <a class="back-link" href="../index.html#work">← All projects</a>
+      </div>
+    </header>
+
+    <main class="project-main wrap">
+      <div class="project-title-block">
+        <p class="section-label">Project 02</p>
+        <h1 id="project-title">Particle System</h1>
+        <div class="project-meta-row">
+          <span>April 2026</span>
+          <span>~6 hours</span>
+          <div class="project-tags">
+            <span class="tag-pill">Physics</span>
+            <span class="tag-pill">Generative</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sketch-stage" role="region" aria-labelledby="project-title">
+        <div class="sketch-toolbar">
+          <button type="button" class="btn btn-secondary" id="restart">Restart sketch</button>
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/yourusername/p5-portfolio/blob/main/projects/js/particle-system.js"
+            rel="noopener noreferrer"
+            >View source</a
+          >
+        </div>
+        <div
+          id="sketch-holder"
+          class="sketch-holder"
+          role="img"
+          aria-label="Live p5.js sketch: soft particles drifting with gravity"
+        ></div>
+      </div>
+
+      <div class="detail-prose">
+        <p>
+          Hundreds of lightweight particles spawn with random velocities and gentle gravity,
+          fading as they age. Vectors keep motion readable: each particle stores position and
+          velocity as <code>p5.Vector</code> instances. Trails come from a translucent full-canvas
+          rectangle each frame rather than clearing to solid black.
+        </p>
+      </div>
+      <ul class="api-list">
+        <li><code>createVector()</code>, vector math</li>
+        <li><code>random()</code></li>
+        <li><code>map()</code> for alpha</li>
+      </ul>
+
+      <nav class="project-pager" aria-label="Adjacent projects">
+        <a href="generative-landscape.html">← Previous</a>
+        <a href="recursive-patterns.html">Next →</a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p class="footer-copy"><a href="../index.html">Home</a></p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+    <script src="js/particle-system.js"></script>
+  </body>
+</html>
